@@ -23,6 +23,19 @@ body {
 footer.page-footer {
     background-color: #4285F4;
 }
+.page-footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.page-footer>div{
+    min-width: 200px;
+}
+
+.page-footer img{
+    max-width: 40px;
+    max-height: 40px;
+}
 
 @media only screen and (max-width: 768px) {
     .navbar {
@@ -85,4 +98,34 @@ iframe, object, embed {
 
 .carousel-control .icon-next, .carousel-control .icon-prev{
     font-size: 60px !important;
+}
+.segment{padding:45px 0;position:relative}
+
+@media (min-width:992px){
+    .segment{padding:60px 0}
+    .segment:after{width:720px}
+}
+
+#instagram_gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#instagram_gallery>*{
+    max-width: 170px !important;
+    max-height: 170px !important;
+    margin: 5px !important;
+}
+
+@media (min-width:992px){
+ 
+    #instagram_gallery>*{
+        max-width: 400px !important;
+        max-height: 400px !important;
+        margin: 5px !important;
+    }
+
 }
