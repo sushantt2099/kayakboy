@@ -1,0 +1,15 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": {
+    "public": "public",
+    "headers": [ {
+    	"source" : "*",
+  		"headers" : [ {
+    		"key" : "Cache-Control",
+    		"value" : "max-age=1.21e+6"
+  		}]
+  	}]
+  }
+}

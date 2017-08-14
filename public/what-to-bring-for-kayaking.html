@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>KayakBoy - What to bring for kayaking</title>
+    <!-- JQuery -->
+    <script type="text/javascript" src="../../js/jquery-2.2.3.min.js"></script>
+    <meta name="Description" content="what to bring for kayaking.">
+    <meta name="Robots" content="index, follow">
+    <meta name="Keywords" content="kayaking, kayakboy, what to bring for kayaking">
+</head>
+
+<body>
+    <div id="nav"></div>
+    <div style="padding: 20px; padding-top: 100px; max-width: 700px; margin-left: auto; margin-right: auto">
+        <h1>What you should bring for kayaking</h1>
+        <p>click on the checklist to save it. It will be saved even if you reload/close your browser</p>
+        <h2>For <a href="/kayaking_trip/introductory/introductory.html">Introductory Trip</a></h2>        
+        <ul>
+            <li><input type="checkbox" name="intro_cloths" id="intro_cloths" onchange="changeCheckList(this)"> Extra Pair of cloths to change after completing the trip</li>
+            <li><input type="checkbox" name="intro_sunglass" id="intro_sunglass" onchange="changeCheckList(this)">
+            Sunglass</li>
+        </ul>
+        <h2>For <a href="/kayaking_trip/challenger/challenger.html">Challenger Trip</a></h2>
+        <ul>
+            <li><input type="checkbox" name="chal_cloths" id="chal_cloths" onchange="changeCheckList(this)">
+            Must be wearing full sleve shirt/t-shirt and full pajama for protect body from sunlight</li>
+            <li><input type="checkbox" name="chal_cloths_extra" id="chal_cloths_extra" onchange="changeCheckList(this)">
+            Extra Pair of cloths to change after completing the trip</li>
+            <li><input type="checkbox" name="chal_sunglass" id="chal_sunglass" onchange="changeCheckList(this)">
+            Sunglass</li>
+            <li><input type="checkbox" name="chal_sunscreen" id="chal_sunscreen" onchange="changeCheckList(this)">
+            Sunscreen lotion</li>
+            <li><input type="checkbox" name="chal_towel" id="chal_towel" onchange="changeCheckList(this)">
+                light towel
+            </li>
+        </ul>
+        <h2>For <a href="/kayaking_trip/explore/explore.html">Explore Trip</a></h2>
+        <ul>
+            <ul>
+                <li><h3>Available for Rent</h3></li>
+                <li><input type="checkbox" name="expl_cap" id="expl_cap" onchange="changeCheckList(this)">
+                Cap(available for rent - INR 100)</li>
+                <li><input type="checkbox" name="expl_cap" id="expl_phone_case" onchange="changeCheckList(this)">
+                Water proof phone case(available for rent - INR 50)</li>
+                <li><input type="checkbox" name="expl_cap" id="expl_arm_cover" onchange="changeCheckList(this)">
+                ARM Cover(required if you have half sleve tshirt)(available for rent - INR 50)</li>
+                <li><input type="checkbox" name="expl_uv_tshirt" id="expl_arm_cover" onchange="changeCheckList(this)">
+                Anti-UV tshirt for men/women(available for rent - INR 150)</li> 
+                <li><input type="checkbox" name="expl_water_shoe" id="expl_shoe" onchange="changeCheckList(this)">
+                water proof shoe for men/women(available for rent - INR 150)</li> 
+            </ul>
+            <li><input type="checkbox" name="expl_cloths" id="expl_cloths" onchange="changeCheckList(this)">
+            Must be wearing full sleve shirt/t-shirt and full pajama for protect body from sunlight</li>
+            <li><input type="checkbox" name="expl_cloths_extra" id="expl_cloths_extra" onchange="changeCheckList(this)">
+            Extra Pair of cloths to change after completing the trip</li>
+            <li><input type="checkbox" name="expl_sunglass" id="expl_sunglass" onchange="changeCheckList(this)">
+            Sunglass</li>
+            <li><input type="checkbox" name="expl_sunscreen" id="expl_sunscreen" onchange="changeCheckList(this)">
+            Sunscreen lotion(can be bought at the venue at MRP)</li>
+            <li><input type="checkbox" name="expl_odomos" id="expl_odomos" onchange="changeCheckList(this)">
+            Odomos </li>
+            <li><input type="checkbox" name="expl_towel" id="expl_towel" onchange="changeCheckList(this)">
+            towel</li>
+            <li><input type="checkbox" name="expl_toilet" id="expl_toilet" onchange="changeCheckList(this)">
+            toilet paper</li>
+            <li><input type="checkbox" name="expl_torch" id="expl_torch" onchange="changeCheckList(this)">
+            Torch</li>
+            <li><input type="checkbox" name="expl_power" id="expl_power" onchange="changeCheckList(this)">
+            power-bank(optional)</li>
+            <li><input type="checkbox" name="expl_tooth" id="expl_tooth" onchange="changeCheckList(this)">
+            toothbrush, toothpaste, soap, shampoo</li>
+        </ul>
+    </div>
+    <div id="contact_us"></div>
+    <div id="footer"></div>
+    <div id="script"></div>
+    <div id="style"></div>
+    <script type="text/javascript">
+    $('#style').load('/styles.html')
+    $('#script').load("/scripts.html");
+    </script>
+    <style type="text/css">
+    .navbar {
+        /*background-color: transparent;*/
+        background-color: #4285F4 !important;
+    }
+    ul, ul li{
+        list-style-type: inherit;
+    }
+    ul {
+        padding: inherit;
+        padding-top: 0px;
+    }
+    </style>
+    <script type="text/javascript" src="/bower_components/js-cookie/src/js.cookie.js"></script>
+    <script type="text/javascript">
+        function changeCheckList(element){
+            //save checked status
+            Cookies.set(element.id, element.checked);
+        };
+        function populateTheChecklist(){
+            var checkList = Cookies.get();
+            for(var item in checkList){
+                if(checkList.hasOwnProperty(item)){
+                    // check if the cookie is assiciated with the checkbox
+                    if(document.getElementById(item)){
+                        document.getElementById(item).checked = (checkList[item] === 'true');
+                    }
+                }
+            }
+        };
+        populateTheChecklist();
+    </script>
+    
+</body>
+
+</html>

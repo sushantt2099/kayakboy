@@ -1,0 +1,88 @@
+
+/* TEMPLATE STYLES */
+
+
+/* Necessary for full page carousel*/
+
+html,
+body {
+    height: 90%;
+}
+
+
+/* Navigation*/
+
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: #4285F4;
+}
+
+footer.page-footer {
+    background-color: #4285F4;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+}
+
+
+/* Carousel*/
+
+.carousel {
+    height: 80%;
+}
+
+@media (max-width: 776px) {
+    .carousel {
+        height: 100%;
+    }
+}
+
+.carousel-item,
+.active {
+    height: 100%;
+}
+
+.carousel-item .flex-center {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+
+/*Caption*/
+
+.flex-center {
+    color: #fff;
+}
+
+.card img {
+    width: 100%;
+}
+
+.description h2{
+    text-align: center;
+}
+.description > *{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.map{
+    text-align: center;
+}
+iframe, object, embed {
+    max-width: 100%;
+}
+
+.carousel-control .icon-next, .carousel-control .icon-prev{
+    font-size: 60px !important;
+}
