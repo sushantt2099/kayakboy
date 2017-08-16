@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://kayakboy.in/</loc>
@@ -25,6 +24,40 @@
     <loc>https://kayakboy.in/faq.html</loc>
     <changefreq>weekly</changefreq>
   </url>
+  <url>
+    <loc>https://kayakboy.in/events/upcoming-kayaking-events.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://kayakboy.in/events/past-kayaking-events.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://kayakboy.in/how-to-reach-mulki.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://kayakboy.in/what-to-bring-for-kayaking.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://kayakboy.in/where-to-stay-in-mulki.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://kayakboy.in/blog/posts/kayaking-in-river-suvarna/kayaking-in-river-suvarna-the-plan.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://kayakboy.in/blog/posts/how-kayakboy-started/idea-of-kayaking-in-shambhavi.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://kayakboy.in/blog/posts/1-my-first-solo-kayaking-trip/solo-kayaking-trip.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://kayakboy.in/risk-management/kayaking-explore-trip.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
 </urlset>
-<!--<guid value="bba55dec-faf2-4c63-9e29-e6af47cd8ee0" />-->
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
