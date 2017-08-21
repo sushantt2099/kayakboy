@@ -5,10 +5,10 @@
   "hosting": {
     "public": "public",
     "headers": [ {
-    	"source" : "*",
+    	"source" : "**/*",
   		"headers" : [ {
     		"key" : "Cache-Control",
-    		"value" : "max-age=1.21e+6"
+    		"value" : "max-age=302500"
   		}]
   	}]
   }
